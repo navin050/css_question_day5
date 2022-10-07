@@ -1,0 +1,182 @@
+h1{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 3em;
+}
+
+p{
+    color: blue;
+    margin: 10px;
+    padding: auto;
+    font-size: 1.1em;
+}
+
+.output{
+    color: red;
+    font-size: 2em;
+    /* text-decoration: double; */
+}
+
+.div {
+    width: 100px;
+    height: 100px;
+    background: aqua;
+    /* transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 0.3s; */
+    transition: width 2s linear 0.3s;
+}
+
+.div:hover{
+    width: 300px
+}
+
+ul{
+    color: blue;
+    margin: 10px;
+    padding: auto;
+    font-size: 1.1em;
+    list-style-type: disc;
+}
+
+b{
+    color: black;
+}
+
+.transformation{
+    animation: translating 4s infinite;
+    background-color: tomato;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+}
+
+@keyframes translating {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg) ;
+    }
+}
+
+/* @keyframes translating {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(240px, 0);
+    }
+
+    50% {
+        transform: translate(240px, 140px);
+    }
+
+    75% {
+        transform: translate(0, 140px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+} */
+
+.container {
+    display: grid;
+    grid-template-columns: 200px 50px 100px;
+    grid-template-rows: 50px 50px;
+    grid-gap: 5px;
+    text-align: center;
+    justify-content: center;
+}
+
+.item{
+    background-color: aqua;
+    border: 1px solid gray;
+
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.item3 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.item4 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+ol{
+    color: blue;
+    margin: 10px;
+    padding: auto;
+    font-size: 1.1em;
+}
+
+.div1 .p1 {  /* --> (div is the parent and the p is the child) */
+    color: green;
+    font-family: 'Times New Roman';
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.div2 > .p2   {
+    color: green;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.h2+.p3 {
+    color: green;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.button~.p4 {
+    color: green;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.div3 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    /* transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 0.3s; */
+    transition: width 2s linear 0.3s;
+}
+
+.div3:hover{
+    width: 300px;
+    font-size: 2em;
+    color: white;
+}
+code{
+    font-size: 1.2em;
+
+}
+
+.td{
+    /* text-align: center; */
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 15px;
+}
+
+table{
+    margin: auto;
+}

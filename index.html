@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>CSS INTERVIEW Q&A (DAY5)</h1>
+    <h3>1. Show implementation of transition.</h3>
+    <p>The transition-property specifies the CSS properties to which you want the transition effect. Only these CSS properties are animated.</p>
+    <p class="output">output:-</p>
+    <div class="div"></div>
+    <hr><hr>
+    <h3>2. Show implementation of transformation.</h3>
+    <p>CSS transforms are a collection of functions that allow to shape elements in particular ways:</p>
+    <ul>
+        <li><b>translate:</b> moves the element along up to 3 axis (x, y and z)</li>
+        <li><b>rotate:</b> moves the element around a central point
+        </li>
+        <li><b>scale:</b> resizes the element</li>
+        <li><b>skew:</b> distorts the element</li>
+    </ul>
+    <p class="output">output:-</p>
+    <div class="transformation"></div>
+    <hr><hr>
+    <h3>3. Show implementation of grid.</h3>
+    <p class="output">output:-</p>
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+        <div class="item item-5">5</div>
+        <div class="item item-6">6</div>
+    </div>
+    <hr><hr>
+    <h3>4. What are CSS combinators?</h3>
+    <p>Combinators combine the selectors to provide them a useful relationship and the position of content in the document. This comes in handy when you want to style certain elements all at once rather than styling elements individually. CSS combinator selectors are as follows.
+    </p>
+    <ol>
+        <li>Descendant Selector (space)</li>
+        <li>Child Selector (>)</li>
+        <li>Adjacent Sibling Selector (+)</li>
+        <li>General Sibling Selector (~)</li>
+    </ol>
+    <p><b>Descendant Selector :</b>  The descendant selector matches all elements that are descendants of a specified element.</p>
+    <p class="output">output:-</p>
+    <div class="div1">
+        <h2>Hello World!</h2>
+        <p class="p1">I am child paragraph</p>
+        <p class="p1">I am child paragraph</p>
+    </div>
+    <hr>
+    <p><b>Child Selector :</b>   The child selector will only affect elements under a direct parent. A good way to remember this is that a child will only listen to its direct parents.</p>
+    <p class="output">output:-</p>
+    <div class="div2">
+        <h2>This heading is a direct child of the div tag.</h2>
+        <p class="p2">So is this paragraph tag.</p>
+        <button>
+            <p class="p2">This paragraph tag is NOT a direct child of the first div</p>
+        </button>
+        <p class="p2">This paragraph tag is also a child of the div tag</p>
+    </div>
+    <hr>
+    <p><b>Adjacent Sibling Selector :</b>   To use the adjacent sibling selector in your CSS stylesheet, you simply need the plus (+) sign. The adjacent sibling selector is used to select an element that is directly after another specific element.</p>
+    <p class="output">output:-</p>
+    <div>
+        <h2 class="h2">This is a H2 tag.</h2>
+        <p class="p3">This p tag immediately follows the heading.</p>
+        <button>
+            <p class="p3">This p tag is NOT immediately following a H2 tag.</p>
+        </button>
+        <h2 class="h2">Howdy! This is another H2 tag.</h2>
+        <p class="p3">This p tag is after another H2 tag and gets formatted.</p>
+    </div>
+    <hr>
+    <p><b>General Sibling Selectors :</b>  The general sibling selector follows through on all elements under the targeted HTML element selected. This means that if another element tag interrupts the direct adjacent flow, the style rules can still follow through.</p>
+    <p class="output">output:-</p>
+    <div>
+        <h2>I am heading tag!</h2>
+        <p class="p4">I am paragraph tag 1.</p>
+        <button class="button">
+            <p class="p4">I am a paragraph tag inside a button!</p>
+        </button>
+        <p class="p4">I am paragraph tag 2.</p>
+        <p class="p4">I am paragraph tag 3.</p>
+        <h3>I am another heading tag!</h3>
+        <p class="p4">I am paragraph tag 4.</p>
+    </div>
+    <hr><hr>
+    <h3>5. What are pseudo selectors in CSS?</h3>
+    <p>CSS pseudo-classes are used to add styles to selectors, but only when those selectors meet certain conditions. A pseudo class is expressed by adding a colon (:) after a selector in CSS, followed by a pseudo-class such as "hover", "focus", or "active", like this:
+    </p>
+    <p class="output">output:-</p>
+    <div class="div3">Hover on me</div>
+    <p>Syntax:</p>
+    <code>selector:pseudo-class {
+        property : value;
+     }
+    </code>
+    <hr>
+    <p>Some Examples of Pseudo-Class:</p>
+    <table>
+        <tr>
+            <td class="td">:active</td>
+            <td>It is used to add style to an active element.</td>
+        </tr>
+        <tr>
+            <td class="td">:hover</td>
+            <td>It adds special effects to an element when the user moves the mouse pointer over the element.</td>
+        </tr>
+        <tr>
+            <td class="td">:link</td>
+            <td>It adds style to the unvisited link.</td>
+        </tr>
+        <tr>
+            <td class="td">:visited</td>
+            <td>It adds style to a visited link.</td>
+        </tr>
+        <tr>
+            <td class="td">:lang</td>
+            <td>It is used to define a language to use in a specified element.</td>
+        </tr>
+        <tr>
+            <td class="td">:focus</td>
+            <td>It selects the element which is focused by the user currently.</td>
+        </tr>
+        <tr>
+            <td class="td">:first-child</td>
+            <td>It adds special effects to an element, which is the first child of another element.</td>
+        </tr>
+    </table>
+</body>
+</html>
